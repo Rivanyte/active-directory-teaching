@@ -1,0 +1,114 @@
+chapter 7 ng libro disk managemnet
+
+Simple Volume - USB
+ Storage: 
+  Disk 1: 400 MB
+ Drive: E:
+ Name: Simple 🙁
+
+Spanned Volume
+ Storage:
+  Disk 1: 150 MB
+  Disk 2: 250 MB
+  Disk 3: 100 MB
+ Drive: F:
+ Name: Spanned 🙁
+
+Stripped / RaidZERO Volume - Fastest
+ Storage:
+  Disk 1: 200 MB
+  Disk 2: 200 MB
+  Disk 3: 200 MB
+ Drive: G:
+ Name: RaidZERO 🙁
+
+Mirrored / RaidONE Volume
+ Storage:
+  Disk 1: 400 MB
+  Disk 2: 400 MB
+ Drive: H:
+ Name: RaidOne 🙁
+
+
+RaidFIVE Volume
+ Storage:
+  Disk 1: 400 MB
+  Disk 2: 400 MB
+  Disk 3: 400 MB
+ Drive: I:
+ Name: Raid-5 🙂
+
+
+Create Files
+
+RAIDZERO 😐
+ Files:
+  - INTERNET CACHE & COOKUES
+    - COOKIES.txt
+
+RaidOne 🙁
+ Files:
+  - SYSTEM AND BOOTFILES
+    - SystemFiles.txt
+    use this command tas add ng text file "dir C:\ /a"
+
+
+Raid-5 🙂
+ Files:
+  - SQL Database and Tables
+    - SQLTables.txt
+
+Spanned 🙁
+ Files:
+  - FLOOD CONTROL DOCUMENTS
+    - CONGRESS AND SENATORS KICKBACK.txt
+
+Simple 🙁
+ Files:
+  - MY PERSONAL VID
+    - ME AND MY VIDS.txt
+
+
+# 💽 RAID & Disk Types – Quick Cheat Sheet
+
+---
+
+## 🧠 Quick Memory
+
+* **Simple = normal**
+  → Isang disk lang, walang speed, walang backup
+
+* **Spanned = bigger**
+  → Pinagsama disks para lumaki storage
+  → ❌ 1 disk fail = lahat data mawawala
+
+* **RAID 0 = fast but risky**
+  → ⚡ Fast: hinahati ang data sa maraming disk (sabay-sabay read/write)
+  → ❌ Risky: walang backup, 1 disk fail = lahat data lost
+
+* **RAID 1 = safe**
+  → 🛡️ May copy (mirror) ang data sa 2 disks
+  → ✔ Kahit masira 1 disk, safe pa data
+  → ❌ 50% lang usable space
+
+* **RAID 5 = balanced**
+  → ⚡ May speed (striping) + 🛡️ may protection (parity)
+  → ✔ Kayang mag-survive ng 1 disk failure
+  → ❌ Mas mabagal write
+
+---
+
+## 🔥 One-Line Summary
+
+* RAID 0 → mabilis pero delikado
+* RAID 1 → safe kasi may kopya
+* RAID 5 → balance ng speed at protection
+
+---
+
+## 🎯 Teaching Tip
+
+"If important ang data → RAID 1 or RAID 5
+If speed lang kailangan → RAID 0"
+
+
