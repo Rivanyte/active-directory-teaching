@@ -16,3 +16,7 @@ conf t
  line vty 0 4
   login authentication default
  end
+
+
+to remove raidius server 
+no aaa new-model
